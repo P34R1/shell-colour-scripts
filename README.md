@@ -15,3 +15,8 @@ function fish_greeting
   bash "$DIR_COLORSCRIPTS/$(basename (random choice $(ls $DIR_COLORSCRIPTS)))"
 end
 ```
+
+## Nixos Example
+To move the dotfiles when you rebuild I personally use [config.lib.file.mkOutOfStoreSymlink](https://github.com/P34R1/nixos/blob/79fc56146c7c1399cd4fef32d84ce67465bd7536/main/home.nix#L85)
+
+To make home-manager set your fish greeting I use [programs.fish.interactiveShellInit](https://github.com/P34R1/nixos/blob/79fc56146c7c1399cd4fef32d84ce67465bd7536/config/fish.nix#L32-L37)
